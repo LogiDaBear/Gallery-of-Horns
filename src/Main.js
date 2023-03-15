@@ -9,6 +9,8 @@ class Main extends React.Component {
     <h2>Gallery of Horns</h2>
 
     <HornedBeast name="Me"></HornedBeast>
+    <HornedBeast name="You"></HornedBeast>
+    <HornedBeast name="We"></HornedBeast>
     </>
     )
   }
