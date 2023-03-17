@@ -14,7 +14,7 @@ class SelectedBeast extends React.Component {
           <Modal.Header closeButton>{this.props.selectedBeast.title}</Modal.Header>
           <Modal.Body closeButton>
             
-            <img id='modalimg' src={this.props.selectedBeast.image_url}
+            <img id='modalimg' alt={this.props.selectedBeast.title} src={this.props.selectedBeast.image_url}
             />
           
           </Modal.Body>
