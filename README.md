@@ -1,3 +1,43 @@
+Number and name of feature: ____Modal_________
+
+Estimate of time needed to complete: _4hr____
+
+Start time: __4pm___
+
+Finish time: __7pm___
+
+Actual time needed to complete: __3hr___
+
+Number and name of feature: ______Display Images_______
+
+Estimate of time needed to complete: __2hr___
+
+Start time: __4pm___
+
+Finish time: _7pm____
+
+Actual time needed to complete: _3hr____
+
+Number and name of feature: ______Favorite Individual Beasts______
+
+Estimate of time needed to complete: _2hr____
+
+Start time: __4pm___
+
+Finish time: _7pm____
+
+Actual time needed to complete: __3hr___
+
+Number and name of feature: _______Bootstrap_______
+
+Estimate of time needed to complete: __2hr___
+
+Start time: _4pm____
+
+Finish time: _4pm____
+
+Actual time needed to complete: __10min___
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
