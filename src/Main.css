@@ -3,3 +3,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+#modalimg{
+  /* width: 100%; */
+  max-width: 100%;
+}
