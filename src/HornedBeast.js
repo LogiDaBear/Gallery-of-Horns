@@ -18,27 +18,8 @@ class HornedBeast extends React.Component {
 
   handleClicks = () => {
     this.setState({
-      clicks: this.state.clicks + 1
+      favorites: this.state.favorites + 1
     })
-  }
-
-  //Method to update state of showInfo
-
-  wantsInfo = () => {
-    this.setState({
-      showInfo: true
-    })
-  }
-
-  gotInfo = () => {
-    this.setState({
-      showInfo: false
-    })
-  }
-
-  //Handler for open modal that requires an argument
-  handleBeastClick = () => {
-    this.props.handleOpenModal(this.props.id);
   }
 
 
@@ -48,11 +29,11 @@ class HornedBeast extends React.Component {
       <article>
         <Card style={{ width: '18rem' }}>
           <Card.Body>
-            <Card.Title>{this.state.title}</Card.Title>
+            <Card.Title>{this.props.name}</Card.Title>
             <Card.Text>
-             
-            </Card.Text>
-            <img src={this.props.image_url} alt={this.props.keyword} />
+             {this.state.favorites}
+            </Card.Text>  
+            <img onClick={this.props.updateSbeast} src={this.props.image_url} alt={this.props.keyword} />
             <Button onClick={this.handleClicks} variant="info">💔 Favorite</Button>
           </Card.Body>
         </Card>

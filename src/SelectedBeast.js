@@ -1,53 +1,28 @@
 import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
 import Modal from 'react-bootstrap/Modal';
-import data from './data/data.json'
+
 
 // 2ND CREATE THE CLASS - will always have a render method
 
-class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      hearts: '',
-      showModal: false,
-      selectedBeastImg: '',
-      selectedBeastDesc: ''
-    }
-  }
+class SelectedBeast extends React.Component {
 
-
-  // MODAL METHOD TO CLOSE THE MODAL
-  handleCloseModal = () =>{
-    this.setState({
-      showModal: false
-    })
-  }
-
-  handleOpenModal = (name) => {
-    this.setState({
-      showModal: true,
-      selectedPerson: name
-    })
-  }
 
   render() {
     return (
       <>
-        <Header hearts={this.state.hearts} />
-        <Main addHearts={this.addHearts} handleOpenModal={this.handleOpenModal} data={data} />
-
-        {/* <SelectedBeast /> */}
-        <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
-          <Modal.Header closeButton>{this.state.selectedBeastImg}</Modal.Header>
+        <Modal show={this.props.showModal} onHide={this.props.handleCloseModal}> 
+          <Modal.Header closeButton>{this.props.selectedBeast.title}</Modal.Header>
+          <Modal.Body closeButton>
+            
+            <img id='modalimg' src={this.props.selectedBeast.image_url}
+            />
+          
+          </Modal.Body>
         </Modal>
-        <Footer />
       </>
     )
   }
 }
 
 // 3RD EXPORT THE CLASS FOR OTHER FILES TO IMPORT
-export default App;
+export default SelectedBeast;
